@@ -1,5 +1,14 @@
 # gift-app
 
+## Built with
+
+- [Vue](https://v3.vuejs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Mirage.js](https://miragejs.com/)
+- [Jest](https://jestjs.io/)
+- [Tailwind CSS](https://tailwindcss.com/) & [Meraki UI](https://merakiui.com/)
+- [Postcss](https://postcss.org/)
+
 ## Project setup
 ```
 npm install
