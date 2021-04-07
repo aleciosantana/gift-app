@@ -9,7 +9,7 @@ const makeServer = (environment: 'development' | 'test' = 'development'): Server
       products: Model
     },
     seeds (server) {
-      server.createList('product', 17)
+      server.createList('product', 3)
     },
     factories: {
       product: Factory.extend({
@@ -20,6 +20,8 @@ const makeServer = (environment: 'development' | 'test' = 'development'): Server
       })
     },
     routes () {
+      this.passthrough(process.env.VUE_APP_API)
+
       this.get('/products', (schema) => {
         return schema.all('products').models
       })
